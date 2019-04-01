@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+    
+    <head>
+        <title>Main Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Fencing Club Surtout, Gelderland, The Netherlands">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="icon" href="../Home%20page/Homepageimages/logosurtout.png">
+      <link rel="stylesheet" href="Home%20page.css" >  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+<body>
+    <header role="banner">
+         <div id="logo"><img src="Homepageimages/logosurtout.png" width="90" height=auto alt="Fencing logo"> </div>
+        <h1 id="here"> Surtour </h1>
+        <h2> Fencing Club</h2>
+<!--    <nav role="navigation"><br></nav>-->
+    
+    </header>
+    
+  <div class="sidenav" role="navigation">
+      <a href="../Page%201/New%20Text%20Document1.html">General Information</a>
+  <a href="../Page%202/New%20Text%20Document2.html">Time Schedule Page</a>
+  <a href="../Page0/newdoc.html">Clients</a>
+  <a href="../Page0/newdoc.html">Contact</a>
+  <a href="../Page0/newdoc.html">Contact</a>
+  <a href="../Page0/newdoc.html">Contact</a>
+  <a href="../Page0/newdoc.html">Contact</a>
+      
+</div>
+    
+    <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../Home%20page/Homepageimages/fencingone.jpg" style="width:100%">
+    <div class="text">Our young stars</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../Home%20page/Homepageimages/1fencingthreejpg.jpg.jpg" style="width:100%">
+    <div class="text">Our current chapmions</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../Home%20page/Homepageimages/reisetwo.jpg" style="width:100%">
+    <div class="text">On the tour in Belgium</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    
+    <div id="maintext">
+    <div class="text1"><p> Fencing in Apeldoorn, Doetinchem or Zutphen at Surtout fencing club! Our sportive and sociable club organises training in evenings on Monday in Doetinchem, on Tuesday in Zutphen and on Wednesday in Apeldoorn.</p>
+
+    <p>Every lesson we start with a good warm-up and then we go to work with fencing techniques. We conclude the lesson with a number of challenging fencing-parties.
+    Training and fencing-parties are provided by the fencing teachers: Georges Dérop, Mathijs Bos, Quinton Faas and Kilian Faas.</p>
+
+    <p>We are also an SBB approved training company. At the moment we have Quinton Faas from CIOS Arnhem Rijn IJssel as a trainee.</p>
+    </div>
+   <!-- <p>Download <a href="materials/Enil.jpg" title ="HTML photo reference" download>Price list</a></p>-->
+    
+    <div class="text2"><p>To get more information about the training schedule <a href="../Page 1/New Text Document1.html" title="page 1">click here</a></p>
+    
+    <p>For dutch version of the site click  <a href="https://www.surtout.nl/surtout/p000002/info" title="we zouden blij zijn om je te zien :)">here</a></p>
+        </div>
+</div>
+    
+<footer role="contentinfo" id="contentinfo">
+    
+    <p class="textfooter">Apeldoorn, Netherlands<br>   Wilhelmina Straat 19</p>
+    
+          <a href="https://www.facebook.com/schermvereniging.surtout" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/surtout_nl" class="fa fa-twitter"></a>
+    
+        
+  
+    </footer>    
+    
+    
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+        
+</body>
+   
+</html>
